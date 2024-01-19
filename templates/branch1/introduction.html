@@ -13,32 +13,17 @@
     </head>
 
     <body>
-    <!--设置导航-->
-        <ul class="nav bg-warning">
-        <a class="nav-link text-dark" href="./mainpage.html">主页</a>
-
-        <a class="nav-link text-dark" href="./introduction.html">介绍</a>
-
-        <a class="nav-link text-dark" href="./member.html">成员</a>
-
-        <div class="dropdown">
-
-            <a class="btn btn-warning dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                前往其他主页
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a href="/templates/main/mainpage.html">总会(反内卷)</a>
-                <br/>
-                <a href="/templates/branch1/mainpage.html">第一分会(反凡尔赛)</a>
-            </div>
-
-        </div>
-        </ul>
+        <!--设置导航-->
+        <header id="header"></header>
 
         <h1>这个页面还没做好!!!</h1>
         <h1>这个页面还没做好!!!</h1>
         <h1>这个页面还没做好!!!</h1>
         <h1><center>协会介绍</center></h1>
+
+        <script>
+            $("#header").load("/static/html/header.html");
+            $("#footer").load("/static/html/footer.html");
+        </script>
     </body>
 </html>
